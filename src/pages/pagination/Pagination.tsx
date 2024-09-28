@@ -28,7 +28,7 @@ const Pagination = ({
     (_, index) => index + 1
   ).slice(startPage - 1, endPage);
 
-  const handleEllipsisClick = (direction) => {
+  const handleEllipsisClick = (direction: any) => {
     const newPage =
       direction === "next"
         ? Math.min(endPage + 1, total_pages)
