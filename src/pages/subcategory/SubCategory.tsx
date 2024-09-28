@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 import * as React from "react";
 
 import {
@@ -7,7 +7,7 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
+  // SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -18,14 +18,15 @@ interface SubCategory {
 }
 function SubCategory({
   subCategoryData,
-  callBack,
-}: // clear,
+}: // callBack,
+// clear,
 {
   subCategoryData: SubCategory[];
   callBack: any;
 }) {
+  console.log(subCategoryData);
+
   return (
-    
     <Select onOpenChange={(event) => event}>
       <SelectTrigger dir="rtl" className="w-full cursor-pointer">
         <SelectValue placeholder="اختر الفرع" />

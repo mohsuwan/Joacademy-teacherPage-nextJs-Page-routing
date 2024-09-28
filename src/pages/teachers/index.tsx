@@ -4,8 +4,9 @@ import Card from "../card/card";
 import Pagination from "../pagination/Pagination";
 import Loading from "../loading/Loading";
 import Category from "../category/Category";
-import SubCategory from "../category/SubCategory";
-import { useDebounce } from "use-debounce";
+import SubCategory from "../subcategory/SubCategory";
+// import SubCategory from "../category/SubCategory";
+// import { useDebounce } from "use-debounce";
 
 export default function Header() {
   const [data, setData] = useState([]);
